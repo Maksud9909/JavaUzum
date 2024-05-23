@@ -7,7 +7,7 @@ public class Owl extends Animal{
     }
 
     @Override
-    public void sound() {
-        System.out.println("Ух-ух");
+    public String sound() {
+        return "Ух-ух";
     }
 }

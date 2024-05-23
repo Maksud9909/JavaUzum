@@ -2,17 +2,23 @@ package org.example.HW9.main;
 
 import org.example.HW9.entity.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
-        Animal[] animals = { new Tiger("Tiger"),
-                new Owl("Owl"),
-                new Dog("Dog"),
-                new Cat("Cat")};
+        List<Animal> animals = new ArrayList<>();
+        animals.add(new Tiger("Tiger"));
+        animals.add(new Owl("Owl"));
+        animals.add(new Dog("Dog"));
+        animals.add(new Cat("Cat"));
 
 
-        for (Animal animal : animals) {
-            System.out.print(animal.getName() + " says ");
-            animal.sound();
-        }
+
+
+        AnimalSound animalSound = new AnimalSound();
+        animalSound.animalSound(animals);
+
+
     }
 }

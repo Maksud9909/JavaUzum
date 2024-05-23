@@ -6,7 +6,7 @@ public class Tiger extends Animal{
     }
 
     @Override
-    public void sound() {
-        System.out.println("Р-р-р");
+    public String sound() {
+        return "Р-р-р";
     }
 }

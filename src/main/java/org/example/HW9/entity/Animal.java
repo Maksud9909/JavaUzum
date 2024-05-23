@@ -15,5 +15,5 @@ public abstract class Animal {
         this.name = name;
     }
 
-    public abstract void sound();
+    public abstract String sound();
 }
