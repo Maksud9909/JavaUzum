@@ -11,6 +11,7 @@ public class MotorCycleFactory implements TaxiFactory{
         return new MotorcycleTaxi();
     }
 
+
     @Override
     public Move createMove() {
         return new Ride();
