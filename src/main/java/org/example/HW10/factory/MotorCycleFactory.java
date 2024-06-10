@@ -10,8 +10,6 @@ public class MotorCycleFactory implements TaxiFactory{
     public Driver createDriver() {
         return new MotorcycleTaxi();
     }
-
-
     @Override
     public Move createMove() {
         return new Ride();
